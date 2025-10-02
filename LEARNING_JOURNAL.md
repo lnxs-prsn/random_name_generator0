@@ -15,3 +15,20 @@
     - I will keep initiating the project.
       - I will generate task blueprint and task checklist using the gpt and deepseek
         -  after comparison best will be used as template for the project
+            -  deepseek was chosen for task blueprint more concise
+            -  gpt was chosen for checklist more through
+      -  all the necessary files for the project are in the directory
+      - set up is done
+    - next is research phase
+      - researching random module 
+        - there is module called secrets 
+          - its for cryptographically secure randomizing it uses os supported randomizing
+        - using shuffle and choice together wont lower odds of picking same name multiple times 
+          - so I can just use choice for this simple project
+    - went bit over time 
+      - side notes 
+        - I have began making small errors that lead to wild goose search I mostly had got rid of this habit but it seems to have resurfased again.
+        - example I gave readlines an argument realized the error 
+        - then saw small error in the open() fixed it and 
+        - forgot to remove the argument I gave to readlines
+        - 10 minutes wasted solving problem that does not exist.
