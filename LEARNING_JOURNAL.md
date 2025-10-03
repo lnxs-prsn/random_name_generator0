@@ -32,3 +32,10 @@
         - then saw small error in the open() fixed it and 
         - forgot to remove the argument I gave to readlines
         - 10 minutes wasted solving problem that does not exist.
+
+3.10/ 30 min
+    - 30 min used for preparing interview 
+    - I wasted time trying to decide the scope despite the checklist already having the scope decided 
+      - I forgot how to read the checklist 
+    - solving this from the checklist 
+      - Verify user can choose how many names to generate
