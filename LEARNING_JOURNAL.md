@@ -39,3 +39,25 @@
       - I forgot how to read the checklist 
     - solving this from the checklist 
       - Verify user can choose how many names to generate
+
+4.10/ 50 min
+    - tasks
+
+      - phase 2 - done
+        - Verify user can choose how many names to generate - done
+        - Confirm error handling works with invalid input - done
+      - phase 3 -done
+        - Create project folder + main script (`main.py`) - done
+          - added main() other parts were done in the setup
+        - Create data folder with `first_names.txt` and `last_names.txt` - done
+        - Load datasets into Python lists - done
+      - core logic - done
+      - user interactions - done
+        - Build simple CLI (ask user for number of names) - done
+        - Validate input (must be positive integer) - done
+          - used abs() it returns absolute value simply it removes - or other kind of characters
+        - Display generated names in console - done
+        - 
+    - errors 
+      - I again made small error of forgetting that argparser does not pass variable name to the func but the name for the cli
+    - 

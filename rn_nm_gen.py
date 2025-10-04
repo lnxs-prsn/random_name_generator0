@@ -6,12 +6,15 @@ import argparse
 
 
 # with open('./first_names.txt', 'r')
+try:
+    ffile = open(r'./first_names.txt')
+    fnames = ffile.readlines()
 
-ffile = open(r'./first_names.txt')
-fnames = ffile.readlines()
+    lfile = open(r'./names.txt')
+    lnames = lfile.readlines()
+except :
+    pass
 
-lfile = open(r'./names.txt')
-lnames = lfile.readlines()
 print(type(fnames))
 
 def random_names():
@@ -21,20 +24,30 @@ def random_names():
 
 
 def multiple_names(c):
+    print(type(c))
     c = int(c)
-    while c > 0:
+    c = abs(c)
+    while c >= 0:
         print(random_names())
-        c - 1
+        c = c - 1
         if c == 0:
             break
 
 
 
 # print(random_names())
-print(multiple_names(4))
+# print(multiple_names())
+
+def main():
+
+    parser = argparse.ArgumentParser()
+    subparser = parser.add_subparsers()
+    get_name_parser = subparser.add_parser('gn', help='get name')
+    get_name_parser.set_defaults(func=lambda args: multiple_names(args.amount))
+    name_amount = get_name_parser.add_argument('amount', type=int, help='give numerical value of the amount of random names you want to get printed')
 
 
+    args = parser.parse_args()
+    args.func(args)
 
-parser = argparse.ArgumentParser()
-# name = parser.add_argument('random_name', type=str, help='get random name')
-
+main()
